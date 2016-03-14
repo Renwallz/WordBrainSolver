@@ -21,10 +21,6 @@ for i, row in enumerate(GRID):
         GRID[i][j] = GRIDPOS(i, j, cell)
 MAX_COLS = MAX_ROWS = len(GRID) # Assuming a square
 
-newGRID = [[GRIDPOS(row=0, col=0, val=None), GRIDPOS(row=0, col=1, val=None), GRIDPOS(row=0, col=2, val='d')], [GRIDPOS(row=1, col=0, val=None), GRIDPOS(row=1, col=1, val='b'), GRIDPOS(row=1, col=2, val='r')], [GRIDPOS(row=2, col=0, val=None), GRIDPOS(row=2, col=1, val='a'), GRIDPOS(row=2, col=2, val='e')]]
-newWORD_LENGTHS = [5]
-
-
 print("Making Word Tree")
 WORDTREE = wordDict.wordtree()
 print("Word Tree Done")
